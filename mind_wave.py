@@ -187,7 +187,7 @@ class MindWave:
         return messages, model
 
     def add_default_system_message(self, messages):
-        default_system = {"role": "system", "content": "You are a helpful assistant."}
+        default_system = {"role": "system", "content": "You are a helpful, concise, and reliable assistant."}
         if len(messages) == 0:
             messages.append(default_system)
         elif messages[0]["role"] != "system":
